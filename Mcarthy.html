@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John McCarthy: The Father of AI</title>
+    <!-- Use Tailwind CSS for a modern, responsive design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+        .slide {
+            display: none;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: flex;
+            opacity: 1;
+        }
+        .slide-content {
+            background-color: #161b22;
+            padding: 2.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            width: 800px;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center h-screen p-4">
+
+    <!-- Main presentation container -->
+    <div class="relative flex flex-col items-center justify-center w-full h-full">
+
+        <!-- Slide 1: Introduction -->
+        <div id="slide-1" class="slide active">
+            <div class="slide-content">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-center text-teal-300">John McCarthy: The Father of Artificial Intelligence</h1>
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8 mt-6">
+                    <!-- Placeholder image with alt text -->
+                    <img src="https://placehold.co/200x250/1f2937/d1d5db?text=John+McCarthy" alt="A portrait of John McCarthy, the American computer scientist." class="rounded-lg shadow-lg mb-4 md:mb-0">
+                    <div class="space-y-4 text-lg">
+                        <p class="mb-4">John McCarthy was a visionary American computer scientist and cognitive scientist. His work laid the theoretical and practical foundations for the field of AI.</p>
+                        <h2 class="text-2xl font-semibold text-gray-400">Key Facts:</h2>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong>Born:</strong> September 4, 1927, Boston, Massachusetts</li>
+                            <li><strong>Died:</strong> October 24, 2011, Stanford, California</li>
+                            <li><strong>Coined the Term "Artificial Intelligence"</strong> in 1955.</li>
+                            <li><strong>Creator of the LISP programming language</strong> (1958).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Early Life and Influences -->
+        <div id="slide-2" class="slide">
+            <div class="slide-content">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-center text-teal-300">Early Life and Influences</h1>
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8 mt-6">
+                    <!-- Placeholder image -->
+                    <img src="https://placehold.co/250x200/1f2937/d1d5db?text=Caltech+Campus" alt="An illustration of the Caltech campus, where John McCarthy earned his degree." class="rounded-lg shadow-lg mb-4 md:mb-0">
+                    <div class="space-y-4 text-lg">
+                        <p class="mb-4">McCarthy's intellectual curiosity began early. He was an autodidact, teaching himself college-level mathematics as a teenager by studying textbooks from the nearby California Institute of Technology (Caltech).</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>He received his B.S. in Mathematics from Caltech in 1948 and his Ph.D. from Princeton University in 1951.</li>
+                            <li>A key lecture by John von Neumann on the potential of computers to simulate human intelligence at Caltech inspired his future work.</li>
+                        </ul>
+                        <!-- Button with external link -->
+                        <div class="flex justify-center mt-6">
+                            <a href="https://www.youtube.com/watch?v=KuU82i3hi8c" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-colors duration-200 shadow-lg text-sm md:text-base">
+                                Watch Oral History of John McCarthy
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Major Contributions to AI -->
+        <div id="slide-3" class="slide">
+            <div class="slide-content">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-center text-teal-300">Major Contributions to AI</h1>
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8 mt-6">
+                    <!-- Placeholder image -->
+                    <img src="https://placehold.co/250x250/1f2937/d1d5db?text=AI+Concept" alt="A graphic representing a neural network or a brain connected to a computer." class="rounded-lg shadow-lg mb-4 md:mb-0">
+                    <div class="space-y-4 text-lg">
+                        <p class="mb-4">McCarthy's influence on artificial intelligence is unparalleled. He didn't just name the field, he built its foundational tools.</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong>The Dartmouth Conference (1956):</strong> He co-organized this workshop, which is widely considered the birthplace of AI as a field of study.</li>
+                            <li><strong>LISP:</strong> Created in 1958, LISP (List Processor) was the first programming language for symbolic processing. It became the dominant language for AI research for decades due to its flexibility.</li>
+                            <li><strong>Stanford AI Laboratory (SAIL):</strong> He founded SAIL, which became a leading center for AI research and produced many of the field's pioneers.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Beyond AI -->
+        <div id="slide-4" class="slide">
+            <div class="slide-content">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-center text-teal-300">Beyond AI: Other Innovations</h1>
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8 mt-6">
+                    <!-- Placeholder image -->
+                    <img src="https://placehold.co/250x200/1f2937/d1d5db?text=Cloud+Computing+Icon" alt="An illustration of a network of computers representing time-sharing and cloud computing." class="rounded-lg shadow-lg mb-4 md:mb-0">
+                    <div class="space-y-4 text-lg">
+                        <p class="mb-4">McCarthy's contributions extended far beyond AI, reshaping how we interact with computers today.</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong>Time-Sharing:</strong> He popularized the idea of a single computer being shared by multiple users at once, a concept that made computing more accessible and efficient.</li>
+                            <li><strong>"Computation as a Public Utility":</strong> His vision of computers and software being available on-demand, much like electricity or a telephone service, directly influenced the development of **cloud computing**.</li>
+                        </ul>
+                        <div class="flex justify-center mt-6">
+                            <a href="https://www.confinity.com/legacies/john-mccarthy" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-colors duration-200 shadow-lg text-sm md:text-base">
+                                Learn More About His Cloud Legacy
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Legacy -->
+        <div id="slide-5" class="slide">
+            <div class="slide-content">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-center text-teal-300">A Lasting Influence</h1>
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8 mt-6">
+                    <!-- Placeholder image -->
+                    <img src="https://placehold.co/250x250/1f2937/d1d5db?text=AI+Future" alt="A futuristic graphic representing the continued evolution of AI." class="rounded-lg shadow-lg mb-4 md:mb-0">
+                    <div class="space-y-4 text-lg">
+                        <p class="mb-4">John McCarthy's work is a cornerstone of modern computer science. His visionary insights continue to guide AI research and development today.</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>His work on symbolic AI and logical reasoning influences modern fields like natural language processing.</li>
+                            <li>The core principles he established at the Dartmouth Conference—that machines can be made to simulate intelligence—remain the driving force behind the entire field.</li>
+                            <li>He was a recipient of the prestigious Turing Award in 1971 for his contributions to the field of AI.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="flex justify-between w-full max-w-2xl mt-8">
+            <button id="prev-btn" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-6 rounded-full transition-colors duration-200 shadow-lg opacity-50 cursor-not-allowed" disabled>
+                &larr; Previous
+            </button>
+            <button id="next-btn" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full transition-colors duration-200 shadow-lg">
+                Next &rarr;
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+            updateButtons();
+        }
+
+        function updateButtons() {
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === slides.length - 1;
+
+            if (prevBtn.disabled) {
+                prevBtn.classList.add('opacity-50', 'cursor-not-allowed');
+            } else {
+                prevBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+
+            if (nextBtn.disabled) {
+                nextBtn.classList.add('opacity-50', 'cursor-not-allowed');
+            } else {
+                nextBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+        }
+
+        nextBtn.addEventListener('click', () => {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        });
+
+        // Initialize the presentation
+        window.onload = () => {
+            showSlide(currentSlide);
+        };
+    </script>
+
+</body>
+</html>
