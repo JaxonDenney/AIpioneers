@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Samuel: A Pioneer in Machine Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+        .slide-container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s ease-in-out;
+        }
+        .slide {
+            padding: 2.5rem;
+            display: none;
+            flex-direction: column;
+            gap: 1.5rem;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        .slide.active {
+            display: flex;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .slide h1, .slide h2 {
+            font-weight: 700;
+            color: #111827;
+        }
+        .slide h1 { font-size: 2.5rem; }
+        .slide h2 { font-size: 1.75rem; }
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #4f46e5;
+            color: #ffffff;
+        }
+        .btn-primary:hover {
+            background-color: #4338ca;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .btn-secondary {
+            background-color: #e5e7eb;
+            color: #1f2937;
+        }
+        .btn-secondary:hover {
+            background-color: #d1d5db;
+        }
+        .btn:disabled {
+            background-color: #9ca3af;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem;
+        }
+        .image-container {
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            height: auto;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+<div class="slide-container">
+    <!-- Slide 1: Title -->
+    <div id="slide-1" class="slide active">
+        <h1 class="text-center">Arthur Samuel: A Pioneer in Machine Learning</h1>
+        <p class="text-center text-lg text-gray-600">
+            Exploring the life and groundbreaking contributions of one of the founding fathers of Artificial Intelligence.
+        </p>
+        <div class="image-container">
+            <img src="https://placehold.co/800x450/e0e7ff/1e40af?text=Arthur+Samuel" alt="A placeholder image of Arthur Samuel">
+        </div>
+    </div>
+
+    <!-- Slide 2: Early Life and Career -->
+    <div id="slide-2" class="slide">
+        <h2 class="text-center">Early Life & Career</h2>
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+            <div>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Born in Emporia, Kansas, Arthur Samuel earned his degrees from the College of Emporia and MIT. His early career at Bell Laboratories and later at IBM's Poughkeepsie Laboratory laid the groundwork for his revolutionary work. He became a key figure at IBM, influencing the instruction set of their early computers.
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="https://placehold.co/400x300/e0e7ff/1e40af?text=Early+IBM+Computer" alt="A placeholder image of an early IBM computer, similar to the one used by Samuel">
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: The Checkers Program -->
+    <div id="slide-3" class="slide">
+        <h2 class="text-center">The Checkers Program</h2>
+        <p class="text-lg text-gray-700 leading-relaxed">
+            Samuel's most famous contribution was his checkers-playing program for the IBM 701, one of the first successful self-learning programs. He coined the term "machine learning" to describe how the program improved by playing against itself. It used now-foundational techniques like:
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+            <li><strong>Rote Learning:</strong> The program remembered every position it had previously seen and its associated value.</li>
+            <li><strong>Generalization Learning:</strong> It used a "scoring polynomial" to evaluate board positions and dynamically adjusted the weights of this function based on winning or losing.</li>
+            <li><strong>Alpha-Beta Pruning:</strong> A key optimization to efficiently search through possible moves.</li>
+        </ul>
+        <div class="flex justify-center flex-wrap gap-4 mt-4">
+            <a href="https://www.youtube.com/watch?v=T_IsYnRGNls" target="_blank" class="btn btn-primary">
+                <span class="flex items-center gap-2">Watch a Historic Video</span>
+            </a>
+            <a href="https://webdocs.cs.ualberta.ca/~jonathan/publications/ai_publications/samuel.pdf" target="_blank" class="btn btn-primary">
+                <span class="flex items-center gap-2">View Original Paper</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Slide 4: Legacy and Influence -->
+    <div id="slide-4" class="slide">
+        <h2 class="text-center">Legacy and Influence on AI</h2>
+        <p class="text-lg text-gray-700 leading-relaxed">
+            Samuel's work was a watershed moment, proving that computers could learn and adapt without being explicitly programmed for every scenario. His checkers program pioneered concepts that are now central to modern AI, including:
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+            <li><strong>Reinforcement Learning:</strong> Learning through trial and error to maximize a reward signal.</li>
+            <li><strong>Heuristic Search:</strong> Using a scoring function to guide a search algorithm.</li>
+            <li><strong>Game as Testbed:</strong> Establishing the use of games as a controlled environment for AI research.</li>
+        </ul>
+        <div class="image-container">
+            <img src="https://placehold.co/600x400/e0e7ff/1e40af?text=Artificial+Neural+Network" alt="A placeholder image of a modern neural network diagram">
+        </div>
+        <div class="flex justify-center mt-4">
+            <a href="https://www.lightsondata.com/the-history-of-machine-learning/" target="_blank" class="btn btn-primary">
+                <span class="flex items-center gap-2">Read About ML History</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="navigation-buttons">
+        <button id="prevBtn" class="btn btn-secondary">Previous</button>
+        <button id="nextBtn" class="btn btn-primary">Next</button>
+    </div>
+</div>
+
+<script>
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            if (i === index) {
+                slide.classList.add('active');
+            } else {
+                slide.classList.remove('active');
+            }
+        });
+
+        // Update button states
+        prevBtn.disabled = index === 0;
+        nextBtn.disabled = index === slides.length - 1;
+    }
+
+    prevBtn.addEventListener('click', () => {
+        if (currentSlide > 0) {
+            currentSlide--;
+            showSlide(currentSlide);
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        if (currentSlide < slides.length - 1) {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+    });
+
+    // Initialize presentation
+    document.addEventListener('DOMContentLoaded', () => {
+        showSlide(currentSlide);
+    });
+</script>
+
+</body>
+</html>
