@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Vaswani: AI Pioneer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #334155;
+            transition: background-color 0.5s ease-in-out;
+        }
+        .slide {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+        }
+        .slide.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .slide-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 1.5rem;
+        }
+        .content-box {
+            background: #ffffff;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            max-width: 800px;
+            width: 100%;
+        }
+        .info-paragraph {
+            font-size: 1.125rem;
+            line-height: 1.75;
+            margin-bottom: 1.5rem;
+        }
+        .image-container {
+            margin: 2rem auto;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            max-width: 400px;
+        }
+        .nav-button {
+            background-color: #3b82f6;
+            color: #ffffff;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        }
+        .nav-button:hover {
+            transform: translateY(-2px);
+            background-color: #2563eb;
+        }
+        .resource-button {
+            background-color: #60a5fa;
+            color: #ffffff;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s ease-in-out;
+            margin: 0.5rem;
+            display: inline-flex;
+            align-items: center;
+        }
+        .resource-button:hover {
+            background-color: #3b82f6;
+        }
+        .navigation-controls {
+            position: fixed;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 1rem;
+            z-index: 10;
+        }
+        .attribution {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            font-size: 0.75rem;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="presentation-container">
+
+        <!-- Slide 1: Introduction -->
+        <div id="slide-1" class="slide active">
+            <div class="content-box">
+                <div class="flex justify-center mb-6">
+                    <img src="https://placehold.co/150x150/cbd5e1/475569?text=AV" class="rounded-full shadow-lg" alt="Ashish Vaswani portrait placeholder">
+                </div>
+                <h1 class="slide-title">Ashish Vaswani: AI Pioneer</h1>
+                <p class="info-paragraph">
+                    Explore the life and groundbreaking contributions of Ashish Vaswani, a key figure in the revolution of modern artificial intelligence.
+                </p>
+                <button onclick="nextSlide()" class="nav-button">Begin <i class="fas fa-arrow-right ml-2"></i></button>
+            </div>
+        </div>
+
+        <!-- Slide 2: Early Life and Career -->
+        <div id="slide-2" class="slide">
+            <div class="content-box">
+                <h2 class="slide-title">Early Life & Career</h2>
+                <div class="image-container">
+                    <img src="https://placehold.co/800x450/e2e8f0/475569?text=University+of+Southern+California" alt="Illustration of a university campus">
+                </div>
+                <p class="info-paragraph">
+                    Ashish Vaswani, an Indian computer scientist, developed a passion for science and math early in life. He earned his undergraduate degree at the Birla Institute of Technology, Mesra. He later pursued his Ph.D. in Computer Science at the University of Southern California (USC), where he specialized in machine learning and natural language processing (NLP).
+                </p>
+                <div class="flex flex-wrap justify-center mt-6">
+                    <a href="https://en.wikipedia.org/wiki/Birla_Institute_of_Technology,_Mesra" target="_blank" class="resource-button">
+                        <i class="fas fa-university mr-2"></i> BIT Mesra
+                    </a>
+                    <a href="https://viterbi.usc.edu/" target="_blank" class="resource-button">
+                        <i class="fas fa-university mr-2"></i> USC Viterbi School
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: The Transformer Model -->
+        <div id="slide-3" class="slide">
+            <div class="content-box">
+                <h2 class="slide-title">The Transformer Model</h2>
+                <div class="image-container">
+                    <img src="https://placehold.co/800x450/e2e8f0/475569?text=Transformer+Architecture" alt="Diagram of the Transformer model architecture">
+                </div>
+                <p class="info-paragraph">
+                    Vaswani is the lead author of the groundbreaking 2017 paper, "Attention Is All You Need." This paper introduced the Transformer model, a novel neural network architecture that moved away from sequential processing. Its key innovation, the **self-attention mechanism**, allows it to weigh the importance of different words in a sentence simultaneously.
+                </p>
+                <div class="flex flex-wrap justify-center mt-6">
+                    <a href="https://arxiv.org/abs/1706.03762" target="_blank" class="resource-button">
+                        <i class="fas fa-file-alt mr-2"></i> Read the Paper
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=Kz69k8r8p5A" target="_blank" class="resource-button">
+                        <i class="fas fa-video mr-2"></i> Watch an Explanation
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Influence on Modern AI -->
+        <div id="slide-4" class="slide">
+            <div class="content-box">
+                <h2 class="slide-title">Influence on Modern AI</h2>
+                <div class="image-container">
+                    <img src="https://placehold.co/800x450/e2e8f0/475569?text=Modern+AI+Applications" alt="Conceptual image of various AI applications like a chatbot, translation, and image generation">
+                </div>
+                <p class="info-paragraph">
+                    The Transformer model has become the foundational architecture for today's most powerful AI systems. It enabled the development of large language models (LLMs) like **Google's BERT** and **OpenAI's GPT** series, which power applications such as ChatGPT. This work made it possible to create highly efficient and accurate models for a wide range of tasks, from language translation to text generation and beyond.
+                </p>
+                <div class="flex flex-wrap justify-center mt-6">
+                    <a href="https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)" target="_blank" class="resource-button">
+                        <i class="fas fa-book-open mr-2"></i> More on Transformers
+                    </a>
+                    <a href="https://openai.com/research/gpt-4" target="_blank" class="resource-button">
+                        <i class="fas fa-robot mr-2"></i> About the GPT Models
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="navigation-controls">
+        <button id="prevBtn" onclick="prevSlide()" class="nav-button hidden">
+            <i class="fas fa-arrow-left mr-2"></i> Previous
+        </button>
+        <button id="nextBtn" onclick="nextSlide()" class="nav-button">
+            Next <i class="fas fa-arrow-right ml-2"></i>
+        </button>
+    </div>
+
+    <div class="attribution">
+        Content based on research about Ashish Vaswani
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 4;
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active');
+            });
+            document.getElementById(`slide-${n}`).classList.add('active');
+            updateButtons(n);
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        }
+
+        function updateButtons(n) {
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+
+            if (n === 1) {
+                prevBtn.classList.add('hidden');
+                nextBtn.classList.remove('hidden');
+            } else if (n === totalSlides) {
+                nextBtn.classList.add('hidden');
+                prevBtn.classList.remove('hidden');
+            } else {
+                prevBtn.classList.remove('hidden');
+                nextBtn.classList.remove('hidden');
+            }
+        }
+
+        // Initial setup
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(currentSlide);
+        });
+    </script>
+
+</body>
+</html>
