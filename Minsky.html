@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvin Minsky: Pioneer of AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .slide {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+        }
+        .slide.active {
+            opacity: 1;
+        }
+        .slide-title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+        .slide-content {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .button-group {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .nav-button, .link-button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .nav-button:hover, .link-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .nav-button {
+            background-color: #4f46e5;
+            color: white;
+        }
+        .link-button {
+            background-color: #d1d5db;
+            color: #1f2937;
+        }
+        .link-button:hover {
+            background-color: #9ca3af;
+        }
+        .image-container {
+            margin-top: 2rem;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+            backdrop-filter: blur(5px);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="slides-container">
+        <!-- Slide 1: Introduction -->
+        <div id="slide-1" class="slide active">
+            <h1 class="slide-title">Marvin Minsky: Pioneer of AI</h1>
+            <p class="slide-content">
+                Explore the life and work of Marvin Minsky, an American computer scientist and cognitive scientist widely regarded as one of the founders of artificial intelligence.
+            </p>
+            <div class="button-group">
+                <button class="nav-button" onclick="showSlide(2)">Begin Presentation</button>
+            </div>
+        </div>
+
+        <!-- Slide 2: Early Life and Education -->
+        <div id="slide-2" class="slide">
+            <h1 class="slide-title">Early Life and Education</h1>
+            <p class="slide-content">
+                Marvin Minsky was born on August 9, 1927, in New York City. He showed a strong interest in science and mathematics from a young age, leading him to pursue his passion at prestigious institutions.
+            </p>
+            <ul class="list-disc list-inside mt-4 text-left mx-auto max-w-sm text-lg">
+                <li>B.A. in Mathematics from **Harvard University** (1950)</li>
+                <li>Ph.D. in Mathematics from **Princeton University** (1954)</li>
+                <li>Built **SNARC**, one of the first neural network simulators, while at Princeton.</li>
+            </ul>
+            <div class="image-container">
+                <img src="https://placehold.co/600x400/e5e7eb/4b5563?text=Marvin+Minsky" alt="A photo of Marvin Minsky">
+            </div>
+            <div class="button-group">
+                <button class="nav-button" onclick="showSlide(1)">Previous</button>
+                <button class="nav-button" onclick="showSlide(3)">Next</button>
+            </div>
+        </div>
+
+        <!-- Slide 3: Major Contributions -->
+        <div id="slide-3" class="slide">
+            <h1 class="slide-title">Major Contributions to AI</h1>
+            <p class="slide-content">
+                Minsky's work was foundational to the field of AI. He co-founded the **MIT Artificial Intelligence Project** in 1959, establishing a major research center that continues to influence the field today.
+            </p>
+            <ul class="list-disc list-inside mt-4 text-left mx-auto max-w-lg text-lg">
+                <li>Co-authored **"Perceptrons" (1969)**, a book that highlighted limitations of simple neural networks and influenced the "AI winter."</li>
+                <li>Introduced the concept of **"Frames"** for knowledge representation, which helped machines reason about the world.</li>
+                <li>Wrote **"The Society of Mind" (1985)**, proposing that intelligence is a result of many simple "agents" working together.</li>
+            </ul>
+            <div class="button-group">
+                <button class="nav-button" onclick="showSlide(2)">Previous</button>
+                <button class="nav-button" onclick="showSlide(4)">Next</button>
+                <button class="link-button" onclick="showModal('Perceptrons')" aria-label="Learn about the book Perceptrons">Learn about "Perceptrons"</button>
+            </div>
+        </div>
+
+        <!-- Slide 4: Influence on Modern AI -->
+        <div id="slide-4" class="slide">
+            <h1 class="slide-title">Influence on Modern AI</h1>
+            <p class="slide-content">
+                Minsky's theories and work continue to inspire modern AI. His idea of the mind as a computational machine laid the groundwork for many current approaches.
+            </p>
+            <ul class="list-disc list-inside mt-4 text-left mx-auto max-w-lg text-lg">
+                <li>His **"Frames"** theory influenced the development of early **expert systems**.</li>
+                <li>The **"Society of Mind"** theory has new relevance in **agentic AI**, where multiple AI models collaborate to solve complex problems.</li>
+                <li>His vision is a driving force in the pursuit of **Artificial General Intelligence (AGI)**.</li>
+            </ul>
+            <div class="button-group">
+                <button class="nav-button" onclick="showSlide(3)">Previous</button>
+                <button class="nav-button" onclick="showSlide(1)">Restart</button>
+                <a href="https://www.youtube.com/watch?v=FjI1K8m7-cE" target="_blank" class="link-button">Watch a video on Minsky</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals for additional information -->
+    <div id="modal-Perceptrons" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('Perceptrons')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">"Perceptrons"</h2>
+            <p>Published in 1969, "Perceptrons" by Minsky and Seymour Papert was a landmark book that systematically analyzed the limitations of simple neural networks (perceptrons) at the time. Their work demonstrated that these networks could not solve certain types of problems, such as the XOR problem. This critique is often cited as a major factor in the decline of neural network research during the "AI winter" of the 1970s, though it also pushed the field to seek more sophisticated computational models.</p>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 4;
+        const slidesContainer = document.getElementById('slides-container');
+
+        function showSlide(slideNumber) {
+            if (slideNumber < 1 || slideNumber > totalSlides) return;
+            
+            const currentSlideElement = document.getElementById(`slide-${currentSlide}`);
+            currentSlideElement.classList.remove('active');
+
+            currentSlide = slideNumber;
+            const newSlideElement = document.getElementById(`slide-${currentSlide}`);
+            newSlideElement.classList.add('active');
+        }
+
+        function showModal(modalId) {
+            document.getElementById(`modal-${modalId}`).style.display = 'flex';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(`modal-${modalId}`).style.display = 'none';
+        }
+
+        window.onload = () => {
+            // Initial setup to show the first slide
+            document.getElementById('slide-1').classList.add('active');
+        };
+    </script>
+</body>
+</html>
