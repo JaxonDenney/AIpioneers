@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Weizenbaum: The Conscience of the Digital Age</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            overflow: hidden;
+        }
+        .slide {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+        }
+        .slide.active {
+            display: flex;
+            opacity: 1;
+        }
+        .slide-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            max-width: 90%;
+            max-height: 90%;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center p-4">
+
+    <!-- Slide 1: Title Slide -->
+    <div id="slide-1" class="slide active flex items-center justify-center text-center p-4">
+        <div class="slide-content p-8">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-4">Joseph Weizenbaum</h1>
+            <h2 class="text-2xl sm:text-3xl font-light text-gray-600 mb-8">The Conscience of the Digital Age</h2>
+            <p class="text-gray-500 italic">Click the buttons to navigate.</p>
+        </div>
+    </div>
+
+    <!-- Slide 2: Early Life and Career -->
+    <div id="slide-2" class="slide flex items-center justify-center text-center p-4">
+        <div class="slide-content md:flex-row flex-col gap-8 items-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Joseph_Weizenbaum.jpg/640px-Joseph_Weizenbaum.jpg" alt="Portrait of Joseph Weizenbaum" class="w-48 h-auto rounded-full shadow-lg mb-6 md:mb-0">
+            <div class="md:text-left text-center">
+                <h2 class="text-3xl font-semibold mb-4">Early Life and Career</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Born in Berlin, Germany in 1923, Joseph Weizenbaum and his Jewish family fled the Nazi regime in 1935, immigrating to the United States. He served in the U.S. military during World War II and later studied mathematics. His career path led him to MIT, where he became a professor and a pioneer in the field of artificial intelligence.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: The ELIZA Program -->
+    <div id="slide-3" class="slide flex items-center justify-center text-center p-4">
+        <div class="slide-content md:flex-row-reverse flex-col gap-8 items-center">
+            <img src="https://placehold.co/400x300/a3e635/1f2937?text=ELIZA+Chatbot" alt="Illustration of a person talking to a computer screen with text" class="w-full md:w-1/2 rounded-lg shadow-lg mb-6 md:mb-0">
+            <div class="md:text-left text-center">
+                <h2 class="text-3xl font-semibold mb-4">The ELIZA Program</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    In the mid-1960s, Weizenbaum created ELIZA, an early natural language processing program. It simulated a Rogerian psychotherapist by using simple pattern-matching to respond to user statements. Weizenbaum was shocked to see how readily people anthropomorphized the program, confiding in it as if it were a real person.
+                </p>
+                <a href="https://www.youtube.com/watch?v=RMK9AphfLco" target="_blank" class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-full shadow-md hover:bg-blue-600 transition-colors">
+                    Watch a demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: "Computer Power and Human Reason" & The ELIZA Effect -->
+    <div id="slide-4" class="slide flex items-center justify-center text-center p-4">
+        <div class="slide-content md:flex-row flex-col gap-8 items-center">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Computer_Power_and_Human_Reason_by_Joseph_Weizenbaum.jpg/300px-Computer_Power_and_Human_Reason_by_Joseph_Weizenbaum.jpg" alt="Book cover of Computer Power and Human Reason" class="w-32 h-auto rounded-lg shadow-lg mb-6 md:mb-0">
+            <div class="md:text-left text-center">
+                <h2 class="text-3xl font-semibold mb-4">A Warning to the AI Community</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    The phenomenon of people over-attributing intelligence to a machine became known as the "ELIZA effect." Weizenbaum's subsequent book, "Computer Power and Human Reason," became a landmark critique of AI, arguing that while computers could be powerful tools, they should never be given the authority to make decisions requiring human values, wisdom, and judgment.
+                </p>
+                <a href="https://www.youtube.com/watch?v=mJrZe80G6G4" target="_blank" class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-full shadow-md hover:bg-blue-600 transition-colors">
+                    Learn about the "ELIZA effect"
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Influence and Legacy -->
+    <div id="slide-5" class="slide flex items-center justify-center text-center p-4">
+        <div class="slide-content md:flex-row-reverse flex-col gap-8 items-center">
+            <img src="https://placehold.co/400x300/fca5a5/1f2937?text=AI+Ethics" alt="Illustration of gears and a human brain with text" class="w-full md:w-1/2 rounded-lg shadow-lg mb-6 md:mb-0">
+            <div class="md:text-left text-center">
+                <h2 class="text-3xl font-semibold mb-4">Influence and Legacy</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    Weizenbaum's work cemented his place as a foundational figure in AI ethics. His warnings about the overreliance on technology and the moral limitations of machines remain profoundly relevant today in discussions about autonomous weapons, privacy, and algorithmic bias. He taught that the power of technology comes with a responsibility to consider its social and human consequences.
+                </p>
+                <a href="https://fairpicture.org/stories/ai-and-ethical-visual-communications/" target="_blank" class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-full shadow-md hover:bg-blue-600 transition-colors">
+                    Explore Modern AI Ethics
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-4">
+        <button id="prevBtn" class="px-6 py-3 bg-gray-300 text-gray-800 font-bold rounded-full shadow-md hover:bg-gray-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">Previous</button>
+        <button id="nextBtn" class="px-6 py-3 bg-blue-500 text-white font-bold rounded-full shadow-md hover:bg-blue-600 transition-colors">Next</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = ['slide-1', 'slide-2', 'slide-3', 'slide-4', 'slide-5'];
+            let currentSlideIndex = 0;
+
+            const nextBtn = document.getElementById('nextBtn');
+            const prevBtn = document.getElementById('prevBtn');
+
+            function showSlide(index) {
+                // Hide all slides
+                slides.forEach(id => {
+                    const slideElement = document.getElementById(id);
+                    if (slideElement) {
+                        slideElement.classList.remove('active');
+                    }
+                });
+                
+                // Show the current slide
+                const currentSlideElement = document.getElementById(slides[index]);
+                if (currentSlideElement) {
+                    currentSlideElement.classList.add('active');
+                }
+
+                // Update button states
+                prevBtn.disabled = index === 0;
+                nextBtn.disabled = index === slides.length - 1;
+            }
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlideIndex < slides.length - 1) {
+                    currentSlideIndex++;
+                    showSlide(currentSlideIndex);
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlideIndex > 0) {
+                    currentSlideIndex--;
+                    showSlide(currentSlideIndex);
+                }
+            });
+
+            // Initial slide display
+            showSlide(currentSlideIndex);
+        });
+    </script>
+</body>
+</html>
