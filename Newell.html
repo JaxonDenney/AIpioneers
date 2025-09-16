@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Newell: Pioneer of AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* dark gray */
+            color: #e2e8f0; /* light gray */
+        }
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-4">
+
+    <!-- Main Container -->
+    <div class="bg-gray-800 rounded-2xl shadow-xl w-full max-w-4xl p-8 transform transition-all duration-500 ease-in-out">
+        
+        <!-- Navigation -->
+        <div class="flex justify-center space-x-4 mb-8">
+            <button id="nav-early-life" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-colors duration-200">Early Life</button>
+            <button id="nav-contributions" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-colors duration-200">Contributions</button>
+            <button id="nav-influence" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-colors duration-200">Modern Influence</button>
+        </div>
+
+        <!-- Slides Container -->
+        <div id="slides-container" class="relative">
+
+            <!-- Early Life Slide -->
+            <div id="slide-early-life" class="slide active">
+                <h1 class="text-4xl font-bold text-center mb-6 text-gray-200">Allen Newell: Early Life & Career</h1>
+                <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-8">
+                    <img src="https://placehold.co/400x400/2d3748/e2e8f0?text=Allen+Newell" alt="Portrait of Allen Newell" class="rounded-xl shadow-lg w-full lg:w-1/2 object-cover">
+                    <div class="lg:w-1/2 text-lg text-gray-300 space-y-4">
+                        <p>Allen Newell was a prominent American computer scientist and one of the founding fathers of artificial intelligence (AI) and cognitive psychology. He was born on March 19, 1927, in San Francisco, California.</p>
+                        <p>After serving in the U.S. Navy during World War II, he earned a bachelor's degree in physics from Stanford University in 1949. In 1950, he joined the RAND Corporation, where he met his long-term collaborator, Herbert A. Simon. This partnership led him to the Carnegie Institute of Technology (now Carnegie Mellon University), where he earned the university's first AI-based doctoral degree in 1957.</p>
+                        <a href="https://example.com/newell-biography" target="_blank" class="block mt-4 text-center">
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-md transition-colors duration-200">Read a Detailed Biography</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Major Contributions Slide -->
+            <div id="slide-contributions" class="slide">
+                <h1 class="text-4xl font-bold text-center mb-6 text-gray-200">Major Contributions to AI</h1>
+                <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-8">
+                    <div class="lg:w-1/2 text-lg text-gray-300 space-y-4">
+                        <p>Newell's work was central to the development of early AI and was characterized by his goal of making computers effective tools for simulating human problem-solving. His major contributions include:</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong>Logic Theorist:</strong> Developed with Herbert Simon and J.C. Shaw in 1956, this is considered the first AI program. It could prove mathematical theorems.</li>
+                            <li><strong>General Problem Solver (GPS):</strong> An ambitious program designed to mimic human problem-solving strategies using "means-ends analysis."</li>
+                            <li><strong>Information Processing Language (IPL):</strong> A programming language that pioneered key concepts like list processing and dynamic memory allocation.</li>
+                            <li><strong>Soar:</strong> A cognitive architecture from the 1980s that aimed to create a unified theory of cognition.</li>
+                        </ul>
+                        <a href="https://example.com/logic-theorist-video" target="_blank" class="block mt-4 text-center">
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-md transition-colors duration-200">Watch Video on The Logic Theorist</button>
+                        </a>
+                    </div>
+                    <img src="https://placehold.co/400x400/2d3748/e2e8f0?text=Logic+Theorist+Diagram" alt="Diagram of the Logic Theorist's process" class="rounded-xl shadow-lg w-full lg:w-1/2 object-cover">
+                </div>
+            </div>
+
+            <!-- Influence on Modern AI Slide -->
+            <div id="slide-influence" class="slide">
+                <h1 class="text-4xl font-bold text-center mb-6 text-gray-200">Influence on Modern AI</h1>
+                <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-8">
+                    <img src="https://placehold.co/400x400/2d3748/e2e8f0?text=Modern+AI+Concepts" alt="Conceptual image of modern AI" class="rounded-xl shadow-lg w-full lg:w-1/2 object-cover">
+                    <div class="lg:w-1/2 text-lg text-gray-300 space-y-4">
+                        <p>Allen Newell's foundational work laid the groundwork for modern AI in several key ways:</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong>Symbolic AI:</strong> His work established the symbolic AI approach, which is still a foundation for fields like knowledge representation.</li>
+                            <li><strong>Heuristic Search Algorithms:</strong> His use of heuristics in GPS led to the development of search algorithms crucial for robotics and optimization problems today.</li>
+                            <li><strong>Cognitive Architectures:</strong> The concept of integrated systems that model human thought, pioneered by Soar, remains an active area of research.</li>
+                            <li><strong>Human-Computer Interaction:</strong> His research was foundational to the entire field of HCI, influencing the design of modern user interfaces.</li>
+                        </ul>
+                        <a href="https://example.com/newell-legacy-article" target="_blank" class="block mt-4 text-center">
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-md transition-colors duration-200">Explore Newell's Legacy</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const navButtons = document.querySelectorAll('button[id^="nav-"]');
+
+            function showSlide(slideId) {
+                slides.forEach(slide => {
+                    slide.classList.remove('active');
+                });
+                document.getElementById(slideId).classList.add('active');
+            }
+
+            navButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const slideId = `slide-${e.target.id.split('-')[1]}`;
+                    showSlide(slideId);
+                });
+            });
+
+            // Initial slide
+            showSlide('slide-early-life');
+        });
+    </script>
+</body>
+</html>
